@@ -123,3 +123,4 @@ I'll be sharing the work progress using of course this github repository by comm
 - [ ] There is a possibility of conivence between the auditor and the project team. I should either make it obvious, mitigate it or find a way to simply suppress it
 - [ ] I should make sure that everything is feasible technically + before deadline
 - [ ] Proof reading : a lot of typos!
+- [ ] Explain why I need a blockchain to solve this use case : make progress in the audit rating transparent to the public + show publicly attemps to sneak malicious code
