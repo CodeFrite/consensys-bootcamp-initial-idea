@@ -55,7 +55,7 @@ If all the major issues have been fixed, the auditor will set the project in a p
 
 At this point, the public will be able to support the project team by investing in the audit fees.
 
-When the project is finally deployed to the main net, the auditor will perform a last check to ensure that the code correspond exactly to the one audited:
+When the project is finally deployed to the main net, the auditor will perform a last check to ensure that the code corresponds exactly to the one audited:
 - If it is not the case, the funds invested will be returned to the the investors
 - The same will occur if the project team is unable to deliver its project to the main net before an agreed date
 
@@ -122,3 +122,4 @@ I'll be sharing the work progress using of course this github repository by comm
 - [ ] Who will pay for the shipping of the coins? The investors?
 - [ ] There is a possibility of conivence between the auditor and the project team. I should either make it obvious, mitigate it or find a way to simply suppress it
 - [ ] I should make sure that everything is feasible technically + before deadline
+- [ ] Proof reading : a lot of typos!
