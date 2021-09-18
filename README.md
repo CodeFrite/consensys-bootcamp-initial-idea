@@ -1,5 +1,5 @@
 # blockchain-developer-bootcamp-final-project
-Smart Contract Audit &amp; Intermediate Fund Raising Project
+Smart Contract Audit Platform &amp; Audited Coin Offering (ACO)
 
 ## Problematic
 
@@ -121,3 +121,4 @@ I'll be sharing the work progress using of course this github repository by comm
 - [ ] How can I handle the tokens that I will receive from the project teams? Is it even possible considering the different type of addresses (BEP2, BEP20,...) I will have a lot of different tokens in my wallet.
 - [ ] Who will pay for the shipping of the coins? The investors?
 - [ ] There is a possibility of conivence between the auditor and the project team. I should either make it obvious, mitigate it or find a way to simply suppress it
+- [ ] I should make sure that everything is feasible technically + before deadline
