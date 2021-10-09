@@ -64,43 +64,60 @@ On the contrary, if the project team respects its commitment:
 - The project tokens will be delivered to the investors
 - The auditor will keep the money from the investors
  
-## Features & User Stories
+## Features & User Stories = Test 
 
 The following user stories will be used to derive a series of test cases written in js and solidity. These tests cases will be used as part of the Test Driven Development approach: Every time I want to develop a new feature, I begin by writing the corresponding test case, then I code the solution and I stop as soon as the test case passes. Then, if an undesirable behaviour is observed, it means that either the test case and/or the user story itself is incorrect.
 
+### 👪 Common to All Persona
+
+📁 `F-ALL-00: All Users: General Layout`
++ 📝 US-00: *As a user, When I navigate on the website, Then I should always see the header on top (20%) and the page content below (80%) [front-end|mvp]*
++ 📝 US-01: *As a user, When I navigate on the website, And I scroll the page content, Then the header should remain fixed and always on top [front-end|mvp]*
++ 📝 US-02: *As a user, When I navigate on the website, And I am not connected, Then I should see the "Header Disconnected" [front-end|mvp]*
++ 📝 US-03: *As a user, When I navigate on the website, And I am connected, Then I should see the "Header Connected" [front-end|mvp]*
+
+📁 `F-ALL-01: All Users: Navigation`
++ 📝 US-00: *As a user, When I am not logged (no web3 Provider) And I navigate to any Route other than Home Page "/", Then I should be redirected to the Home Page "/" [front-end|mvp]*
+
 ### 👔 Contract Owner
 
-📖 `F-CO-00: Contract Owner: Migration`
-+ 📝 US-00: As a **contract owner**, I should **be the owner of the contract "Teams"** [smart-contract|mvp]
-+ 📝 US-01: As a **contract owner**, I should **be the owner of the contract "Projects"** [smart-contract|mvp]
-+ 📝 US-02: As a **contract owner**, I should **be the owner of the contract "Audits"** [smart-contract|mvp]
+📁 `F-CO-00: Contract Owner: Migration`
++ 📝 US-00: *As a contract owner, I should be the owner of the contract "Teams" [smart-contract|mvp]*
++ 📝 US-01: *As a contract owner, I should be the owner of the contract "Projects" [smart-contract|mvp]*
++ 📝 US-02: *As a contract owner, I should be the owner of the contract "Audits" [smart-contract|mvp]*
 
-📖 `F-CO-01: Contract Owner: Access Rights & Privileges`
-+ 📝 US-00: As a **contract owner**, I should **be the only one able to set the contract owner to a new value** [smart-contract|mvp]
-+ 📝 US-01: As a **contract owner**, I should **be the only one able to add a new auditor** [smart-contract|mvp]
-+ 📝 US-02: As a **contract owner**, I should **be the only one able to add set the auditor privileges** [smart-contract|mvp]
+📁 `F-CO-01: Contract Owner: Access Rights & Privileges`
++ 📝 US-00: *As a contract owner, I should be the only one able to set the contract owner to a new address [smart-contract|mvp]*
++ 📝 US-01: *As a contract owner, I should be the only one able to authenticate a new auditor address [smart-contract|mvp]*
++ 📝 US-02: *As a contract owner, I should be the only one able to revoke an existing auditor address [smart-contract|mvp]*
++ 📝 US-03: *As a contract owner, I should be the only one able to grant an auditor privilege [smart-contract|mvp]*
++ 📝 US-04: *As a contract owner, I should be the only one able to remove an auditor privilege [smart-contract|mvp]*
 
-📒 `F-CO-02: Contract Owner: Fees`
-+ 📝 `F-CO-02-US-00:` As a **contract owner**, I should **be the only one able to modify the team registration fees** [smart-contract|mvp]
-+ 📝 `F-CO-02-US-01:` As a **contract owner**, I should **be the only one able to modify the user registration fees** [smart-contract|mvp]
-+ 📝 `F-CO-02-US-02:` As a **contract owner**, I should **be the only one able to modify the audit registration fees** [smart-contract|mvp]
-+ 📝 `F-CO-02-US-03:` As a **contract owner**, I should **be the only one able to modify the aco registration fees** [smart-contract|optional]
+📁 `F-CO-02: Contract Owner: Fees`
++ 📝 US-00: *As a contract owner, I should be the only one able to modify the team registration fees [smart-contract|mvp]*
++ 📝 US-01: *As a contract owner, I should be the only one able to modify the user registration fees [smart-contract|mvp]*
++ 📝 US-02: *As a contract owner, I should be the only one able to modify the audit registration fees [smart-contract|mvp]*
++ 📝 US-03: *As a contract owner, I should be the only one able to modify the aco registration fees [smart-contract|optional]*
 
-📒 `F-CO-03: Contract Owner: Auditors & Privileges (auditor can launch ico?give rating?)`
-+ 📝 `F-CO-03-US-00:` As a **contract owner**, I should **be the only one able to modify an auditor "mayWriteObservation" flag** [smart-contract|mvp]
-+ 📝 `F-CO-03-US-01:` As a **contract owner**, I should **be the only one able to modify an auditor "mayAcceptCorrection" flag** [smart-contract|mvp]
-+ 📝 `F-CO-03-US-02:` As a **contract owner**, I should **be the only one able to modify an auditor "mayRateAudit" flag** [smart-contract|mvp]
-+ 📝 `F-CO-03-US-03:` As a **contract owner**, I should **be the only one able to modify an auditor "mayOpenACO" flag** [smart-contract|optional]
-+ 📝 `F-CO-03-US-04:` As a **contract owner**, I should **be the only one able to modify an auditor "maySendACOToken" flag** [smart-contract|optional]
-+ 📝 `F-CO-03-US-05:` As a **contract owner**, I should **be the only one able to modify an auditor "mayCloseACO" flag** [smart-contract|optional]
+📁 `F-CO-03: Contract Owner: Auditors Privileges`
++ 📝 US-00: *As a contract owner, I should be the only one able to modify an auditor "mayWriteObservation" flag [smart-contract|mvp]*
++ 📝 US-01: *As a contract owner, I should be the only one able to modify an auditor "mayAcceptCorrection" flag [smart-contract|mvp]*
++ 📝 US-02: *As a contract owner, I should be the only one able to modify an auditor "mayRateAudit" flag [smart-contract|mvp]*
++ 📝 US-03: *As a contract owner, I should be the only one able to modify an auditor "mayStartACO" flag [smart-contract|optional]*
++ 📝 US-04: *As a contract owner, I should be the only one able to modify an auditor "maySendACOToken" flag [smart-contract|optional]*
++ 📝 US-05: *As a contract owner, I should be the only one able to modify an auditor "mayCloseACO" flag [smart-contract|optional]*
+
+📁 `F-CO-04: Contract Owner: Login`
++ 📝 US-00: *As a contract owner, When I am not already logged (no web3 provider) And I click on "Connect Wallet", Then I should be logged as "Contract Owner" [front-end|mvp]*
 
 ### 👷 Audit Team
 
-+ `F-AT-00: Admin DashBoard: Login [mvp]`
-    + `F-AT-00`: As an **admin**, when I navigate to the Home Page (/), if I click on the "Connect Wallet" button, I should be **recognized as an admin** and I should be redirected to the 
-    + 
+📁 `F-AT-00: Audit Team: Login [mvp]`
++ 📝 US-00: *As an auditor, when I am not already logged (no web3 provider) and I navigate to the Home Page (/), And I click on the "Connect Wallet" button, Then I should be recognized as an auditor*
++ 📝 US-00: *As an auditor, when I am already logged And I navigate to the Home Page (/), Then I should see in the content all my privileges*
++ 📝 US-01: *As an auditor, when I am already logged And I navigate to the Home Page (/), Then I should see in the content all the active audits*
 
-+ F-AT-01: Admin DashBoard: Project Team View [mvp]
+📁 F-AT-01: Audit Team: DashBoard - Audit View [mvp]
     + F-AT-01-US-01: As an **admin**, when I navigate to the admin DashBoard (/AdminDashBoard), I want to **have a view on all the registered teams** [front-end|mvp]
     + F-AT-01-US-02: As an **admin**, when I click on a team, I want to **all their related projects and related audits** [front-end|mvp]
     + F-AT-01-US-03: As an **admin**, I want to **have a view on all teams** so that I can **browse their projects and related audits** [front-end|mvp]
@@ -129,7 +146,9 @@ The following user stories will be used to derive a series of test cases written
 - View audits results (filter on under review, under correction, finalized) [mvp]
 - Invest in a project [optional]
 - Check the status of a project on which money was invested [optional]
- 
+
+### 💀 Hacker
+
 ## Technologies
  
 - Solidity (Smart Contract)
