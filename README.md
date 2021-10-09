@@ -68,25 +68,36 @@ On the contrary, if the project team respects its commitment:
 
 The following user stories will be used to derive a series of test cases written in js and solidity. These tests cases will be used as part of the Test Driven Development approach: Every time I want to develop a new feature, I begin by writing the corresponding test case, then I code the solution and I stop as soon as the test case passes. Then, if an undesirable behaviour is observed, it means that either the test case and/or the user story itself is incorrect.
 
-*Contract Owner:*
+### 👔 Contract Owner
 
-+ F-CO-00: Contract Migration
-    + F-CO-00-US-00: As a **contract owner**, I should **be the owner of the contract "Teams"** [smart-contract|mvp]
-    + F-CO-00-US-01: As a **contract owner**, I should **be the owner of the contract "Projects"** [smart-contract|mvp]
-    + F-CO-00-US-02: As a **contract owner**, I should **be the owner of the contract "Audits"** [smart-contract|mvp]
+📖 `F-CO-00: Contract Owner: Migration`
++ 📝 US-00: As a **contract owner**, I should **be the owner of the contract "Teams"** [smart-contract|mvp]
++ 📝 US-01: As a **contract owner**, I should **be the owner of the contract "Projects"** [smart-contract|mvp]
++ 📝 US-02: As a **contract owner**, I should **be the owner of the contract "Audits"** [smart-contract|mvp]
 
-+ F-CO-01: Access Rights & Privileges
-    + F-CO-01-US-00: As a **contract owner**, I should be the only
+📖 `F-CO-01: Contract Owner: Access Rights & Privileges`
++ 📝 US-00: As a **contract owner**, I should **be the only one able to set the contract owner to a new value** [smart-contract|mvp]
++ 📝 US-01: As a **contract owner**, I should **be the only one able to add a new auditor** [smart-contract|mvp]
++ 📝 US-02: As a **contract owner**, I should **be the only one able to add set the auditor privileges** [smart-contract|mvp]
 
-+ F-CO-01: Fees
-    + F-CO-01-US-00: As a **contract owner**, I should be the only one being able to modify
+📒 `F-CO-02: Contract Owner: Fees`
++ 📝 `F-CO-02-US-00:` As a **contract owner**, I should **be the only one able to modify the team registration fees** [smart-contract|mvp]
++ 📝 `F-CO-02-US-01:` As a **contract owner**, I should **be the only one able to modify the user registration fees** [smart-contract|mvp]
++ 📝 `F-CO-02-US-02:` As a **contract owner**, I should **be the only one able to modify the audit registration fees** [smart-contract|mvp]
++ 📝 `F-CO-02-US-03:` As a **contract owner**, I should **be the only one able to modify the aco registration fees** [smart-contract|optional]
 
-+ F-CO-02: Auditors & Privileges (auditor can launch ico?give rating?) 
+📒 `F-CO-03: Contract Owner: Auditors & Privileges (auditor can launch ico?give rating?)`
++ 📝 `F-CO-03-US-00:` As a **contract owner**, I should **be the only one able to modify an auditor "mayWriteObservation" flag** [smart-contract|mvp]
++ 📝 `F-CO-03-US-01:` As a **contract owner**, I should **be the only one able to modify an auditor "mayAcceptCorrection" flag** [smart-contract|mvp]
++ 📝 `F-CO-03-US-02:` As a **contract owner**, I should **be the only one able to modify an auditor "mayRateAudit" flag** [smart-contract|mvp]
++ 📝 `F-CO-03-US-03:` As a **contract owner**, I should **be the only one able to modify an auditor "mayOpenACO" flag** [smart-contract|optional]
++ 📝 `F-CO-03-US-04:` As a **contract owner**, I should **be the only one able to modify an auditor "maySendACOToken" flag** [smart-contract|optional]
++ 📝 `F-CO-03-US-05:` As a **contract owner**, I should **be the only one able to modify an auditor "mayCloseACO" flag** [smart-contract|optional]
 
-*Audit Team:*
+### 👷 Audit Team
 
-+ F-AT-00: Admin DashBoard: Login [mvp]
-    + F-AT-00: As an **admin**, when I navigate to the Home Page (/), if I click on the "Connect Wallet" button, I should be **recognized as an admin** and I should be redirected to the 
++ `F-AT-00: Admin DashBoard: Login [mvp]`
+    + `F-AT-00`: As an **admin**, when I navigate to the Home Page (/), if I click on the "Connect Wallet" button, I should be **recognized as an admin** and I should be redirected to the 
     + 
 
 + F-AT-01: Admin DashBoard: Project Team View [mvp]
@@ -106,7 +117,7 @@ The following user stories will be used to derive a series of test cases written
 + Release coins to the investors addresses [optional]
 + Return coins to the investors addresses [optional]
  
-*Project Team:*
+### Project Team
 - AS A Project Team, WHEN I navigate to my  dashboard "/" [mvp]
 - Project submission [mvp]
 - Audit review [mvp]
@@ -114,7 +125,7 @@ The following user stories will be used to derive a series of test cases written
 - Accept audit results ASIS [mvp]
 - Create InterCO [optional]
  
-*Investors:*
+### Investors
 - View audits results (filter on under review, under correction, finalized) [mvp]
 - Invest in a project [optional]
 - Check the status of a project on which money was invested [optional]
