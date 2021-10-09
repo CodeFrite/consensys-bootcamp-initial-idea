@@ -64,19 +64,50 @@ On the contrary, if the project team respects its commitment:
 - The project tokens will be delivered to the investors
 - The auditor will keep the money from the investors
  
-## Key Features
- 
+## Features & User Stories
+
+The following user stories will be used to derive a series of test cases written in js and solidity. These tests cases will be used as part of the Test Driven Development approach: Every time I want to develop a new feature, I begin by writing the corresponding test case, then I code the solution and I stop as soon as the test case passes. Then, if an undesirable behaviour is observed, it means that either the test case and/or the user story itself is incorrect.
+
+*Contract Owner:*
+
++ F-CO-00: Contract Migration
+    + F-CO-00-US-00: As a **contract owner**, I should **be the owner of the contract "Teams"** [smart-contract|mvp]
+    + F-CO-00-US-01: As a **contract owner**, I should **be the owner of the contract "Projects"** [smart-contract|mvp]
+    + F-CO-00-US-02: As a **contract owner**, I should **be the owner of the contract "Audits"** [smart-contract|mvp]
+
++ F-CO-01: Access Rights & Privileges
+    + F-CO-01-US-00: As a **contract owner**, I should be the only
+
++ F-CO-01: Fees
+    + F-CO-01-US-00: As a **contract owner**, I should be the only one being able to modify
+
++ F-CO-02: Auditors & Privileges (auditor can launch ico?give rating?) 
+
 *Audit Team:*
-+ Admin view on all audit submissions [mvp]
-+ Admin view on all ACO [optional]
-+ Publish Smart contract audit results [mvp]
+
++ F-AT-00: Admin DashBoard: Login [mvp]
+    + F-AT-00: As an **admin**, when I navigate to the Home Page (/), if I click on the "Connect Wallet" button, I should be **recognized as an admin** and I should be redirected to the 
+    + 
+
++ F-AT-01: Admin DashBoard: Project Team View [mvp]
+    + F-AT-01-US-01: As an **admin**, when I navigate to the admin DashBoard (/AdminDashBoard), I want to **have a view on all the registered teams** [front-end|mvp]
+    + F-AT-01-US-02: As an **admin**, when I click on a team, I want to **all their related projects and related audits** [front-end|mvp]
+    + F-AT-01-US-03: As an **admin**, I want to **have a view on all teams** so that I can **browse their projects and related audits** [front-end|mvp]
+
++ Feature F-AT-02: 
+    + F-AT-02-As an **admin**, I want to **have a view on all projects** so that I can **interact with them** [mvp]
+    + 
+
++ Feature F-AT-03: As an **admin**, I want to **have a view on all audit submissions** so that i can **interact with them** [mvp]
++ Feature F-AT-04: As an **admin**, I want to **have a view on all ACOs** so that I can **manage their lifecycle** [optional]
++ Feature F-AT-05: As an **admin**, I want to **be able to publish mart contract audit results** [mvp]
 + Review ACO and accept / refuse [optional]
 + Evaluate launched projects [optional]
 + Release coins to the investors addresses [optional]
 + Return coins to the investors addresses [optional]
  
 *Project Team:*
-- User account creation [mvp]
+- AS A Project Team, WHEN I navigate to my  dashboard "/" [mvp]
 - Project submission [mvp]
 - Audit review [mvp]
 - Submit code fixes/new contract address on testnet [mvp]
