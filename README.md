@@ -76,7 +76,7 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 + CONTEXT: *As an unregistered user, When I navigate to the Home Page (/), ...*
     + 📝 US-00: *... Then I should always see the header on top (10%) and the page content below (90%) [front-end|mvp]*
     + 📝 US-01: *... And I scroll the page content, Then the header should remain fixed, always on top and visible [front-end|mvp]*
-    + 📝 US-02: *... And I am not connected to a wallet (no web3 injected), Then I should see the button "Connect Wallet" [front-end|mvp]*
+    + 📝 US-02: *... And I am not connected to a wallet (no web3 injected), Then I should see in the header the button "Connect Wallet" [front-end|mvp]*
     + 📝 US-03: *... And I am connected to a wallet (no web3 injected), Then the I should see in the content the buttons "Register a Team" and "Become an investor" [front-end|mvp]*
 
 📁 `F-UU-01: Unregistered User: Navigation`
@@ -85,9 +85,10 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 ### 👔 Contract Owner
 
 📁 `F-CO-00: Contract Owner: Migration`
-+ 📝 US-00: *As a contract owner, I should be the owner of the contract "Teams" [smart-contract|mvp]*
-+ 📝 US-01: *As a contract owner, I should be the owner of the contract "Projects" [smart-contract|mvp]*
-+ 📝 US-02: *As a contract owner, I should be the owner of the contract "Audits" [smart-contract|mvp]*
++ CONTEXT: *As a contract owner, I should be the owner of ...*
++ 📝 US-00: *... the contract "Teams" [smart-contract|mvp]*
++ 📝 US-01: *... the contract "Projects" [smart-contract|mvp]*
++ 📝 US-02: *... the contract "Audits" [smart-contract|mvp]*
 
 📁 `F-CO-01: Contract Owner: Access Rights & Privileges`
 + CONTEXT: *As a contract owner, I should be the only one able to ...*
@@ -98,38 +99,40 @@ A user is considered as unregistered if his MetaMask address is not linked to an
     + 📝 US-04: *... remove an auditor privilege [smart-contract|mvp]*
 
 📁 `F-CO-02: Contract Owner: Fees`
-+ 📝 US-00: *As a contract owner, I should be the only one able to modify the team registration fees [smart-contract|mvp]*
-+ 📝 US-01: *As a contract owner, I should be the only one able to modify the user registration fees [smart-contract|mvp]*
-+ 📝 US-02: *As a contract owner, I should be the only one able to modify the audit registration fees [smart-contract|mvp]*
-+ 📝 US-03: *As a contract owner, I should be the only one able to modify the aco registration fees [smart-contract|optional]*
++ CONTEXT: *As a contract owner, I should be the only one able to modify ...*
+    + 📝 US-00: *... the team registration fees [smart-contract|mvp]*
+    + 📝 US-01: *... the user registration fees [smart-contract|mvp]*
+    + 📝 US-02: *... the audit registration fees [smart-contract|mvp]*
+    + 📝 US-03: *... the aco registration fees [smart-contract|optional]*
 
 📁 `F-CO-03: Contract Owner: Auditors Privileges`
-+ 📝 US-00: *As a contract owner, I should be the only one able to modify an auditor "mayWriteObservation" flag [smart-contract|mvp]*
-+ 📝 US-01: *As a contract owner, I should be the only one able to modify an auditor "mayAcceptCorrection" flag [smart-contract|mvp]*
-+ 📝 US-02: *As a contract owner, I should be the only one able to modify an auditor "mayRateAudit" flag [smart-contract|mvp]*
-+ 📝 US-03: *As a contract owner, I should be the only one able to modify an auditor "mayStartACO" flag [smart-contract|optional]*
-+ 📝 US-04: *As a contract owner, I should be the only one able to modify an auditor "maySendACOToken" flag [smart-contract|optional]*
-+ 📝 US-05: *As a contract owner, I should be the only one able to modify an auditor "mayCloseACO" flag [smart-contract|optional]*
++ CONTEXT: *As a contract owner, I should be the only one able to modify ...*
+    + 📝 US-00: *... an auditor "mayWriteObservation" flag [smart-contract|mvp]*
+    + 📝 US-01: *... an auditor "mayAcceptCorrection" flag [smart-contract|mvp]*
+    + 📝 US-02: *... an auditor "mayRateAudit" flag [smart-contract|mvp]*
+    + 📝 US-03: *... an auditor "mayStartACO" flag [smart-contract|optional]*
+    + 📝 US-04: *... an auditor "maySendACOToken" flag [smart-contract|optional]*
+    + 📝 US-05: *... an auditor "mayCloseACO" flag [smart-contract|optional]*
 
 📁 `F-CO-04: Contract Owner: Login`
-+ 📝 US-00: *As a contract owner, When I am not already logged (no web3 provider) And I click on "Connect Wallet", Then I should be logged as "Contract Owner" [front-end|mvp]*
++ 📝 US-00: *As a contract owner, When I am not already logged (no web3 provider) And I click on "Connect Wallet", Then I should see in the header my profile set to "Contract Owner" [front-end|mvp]*
 
 ### 👷 Audit Team
 
 📁 `F-AT-00: Audit Team: Login [mvp]`
-+ 📝 US-00: *As an auditor, When I am not already logged in (no web3 provider) and I navigate to the Home Page (/), And I click on the "Connect Wallet" button, Then I should be redirected to the auditor DashBoard (/AuditorDashboard)*
-+ 📝 US-04: *... And I am connected to MetaMask, And I recognised as a team but not as an investor, Then I should see the Landing Page [front-end|mvp]*
++ CONTEXT: *As an auditor, When I am not already logged in (no web3 provider), And I click on the "Connect Wallet" button, ...*
+    + 📝 US-00: *... Then I should be redirected to the auditor DashBoard (/AuditorDashboard) [front-end|mvp]*
+    + 📝 US-01: *... Then I should not see in the content the buttons "Register a Team" and "Become an investor" [front-end|mvp]*
 
-+ 📝 US-01=>04:*As an auditor, When I am already logged in And I navigate to the Home Page (/), ...
-    + 📝 US-01: ... Then I should see in the header my profile (only auditor)*
-    + 📝 US-02: ... Then I should see in the header my address*
-    + 📝 US-03: ... Then I should see in the header all my privileges*
-    + 📝 US-04: ... Then I should see in the content all the active audits*
-
-📁 F-AT-01: Audit Team: DashBoard - Audit View [mvp]
-    + F-AT-01-US-01: As an **admin**, when I navigate to the admin DashBoard (/AdminDashBoard), I want to **have a view on all the registered teams** [front-end|mvp]
-    + F-AT-01-US-02: As an **admin**, when I click on a team, I want to **all their related projects and related audits** [front-end|mvp]
-    + F-AT-01-US-03: As an **admin**, I want to **have a view on all teams** so that I can **browse their projects and related audits** [front-end|mvp]
+📁 `F-AT-01: Audit Team: Dashboard [mvp]`
++ CONTEXT: *As an auditor, When I am already logged in And I navigate to the Home Page (/), ...*
+    + 📝 US-01: *... Then I should see in the header my profile set as auditor*
+    + 📝 US-02: *... Then I should see in the header my wallet address*
+    + 📝 US-03: *... Then I should see in the header all my auditor privileges*
+    + 📝 US-04: *... Then I should see in the content all the active audits*
++ F-AT-01-US-01: As an **admin**, when I navigate to the admin DashBoard (/AdminDashBoard), I want to **have a view on all the registered teams** [front-end|mvp]
++ F-AT-01-US-02: As an **admin**, when I click on a team, I want to **all their related projects and related audits** [front-end|mvp]
++ F-AT-01-US-03: As an **admin**, I want to **have a view on all teams** so that I can **browse their projects and related audits** [front-end|mvp]
 
 + Feature F-AT-02: 
     + F-AT-02-As an **admin**, I want to **have a view on all projects** so that I can **interact with them** [mvp]
@@ -151,12 +154,13 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 - Accept audit results ASIS [mvp]
 - Create InterCO [optional]
  
-### Investors
+### 📈 Investors
 - View audits results (filter on under review, under correction, finalized) [mvp]
 - Invest in a project [optional]
 - Check the status of a project on which money was invested [optional]
 
 ### 💀 Hacker
+
 
 ## Technologies
  
