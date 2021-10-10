@@ -68,16 +68,19 @@ On the contrary, if the project team respects its commitment:
 
 The following user stories will be used to derive a series of test cases written in js and solidity. These tests cases will be used as part of the Test Driven Development approach: Every time I want to develop a new feature, I begin by writing the corresponding test case, then I code the solution and I stop as soon as the test case passes. Then, if an undesirable behaviour is observed, it means that either the test case and/or the user story itself is incorrect.
 
-### 👪 Common to All Persona
+### 👪 Unregistered User
 
-📁 `F-ALL-00: All Users: General Layout`
-+ 📝 US-00: *As a user, When I navigate on the website, Then I should always see the header on top (20%) and the page content below (80%) [front-end|mvp]*
-+ 📝 US-01: *As a user, When I navigate on the website, And I scroll the page content, Then the header should remain fixed and always on top [front-end|mvp]*
-+ 📝 US-02: *As a user, When I navigate on the website, And I am not connected, Then I should see the "Header Disconnected" [front-end|mvp]*
-+ 📝 US-03: *As a user, When I navigate on the website, And I am connected, Then I should see the "Header Connected" [front-end|mvp]*
+A user is considered as unregistered if his MetaMask address is not linked to any role in one of the contracts (Roles: contract owner / auditor / team / investor).
 
-📁 `F-ALL-01: All Users: Navigation`
-+ 📝 US-00: *As a user, When I am not logged (no web3 Provider) And I navigate to any Route other than Home Page "/", Then I should be redirected to the Home Page "/" [front-end|mvp]*
+📁 `F-UU-00: Unregistered User: General Layout`
++ CONTEXT: *As an unregistered user, When I navigate to the Home Page (/), ...*
+    + 📝 US-00: *... Then I should always see the header on top (10%) and the page content below (90%) [front-end|mvp]*
+    + 📝 US-01: *... And I scroll the page content, Then the header should remain fixed, always on top and visible [front-end|mvp]*
+    + 📝 US-02: *... And I am not connected to a wallet (no web3 injected), Then I should see the button "Connect Wallet" [front-end|mvp]*
+    + 📝 US-03: *... And I am connected to a wallet (no web3 injected), Then the I should see in the content the buttons "Register a Team" and "Become an investor" [front-end|mvp]*
+
+📁 `F-UU-01: Unregistered User: Navigation`
++ 📝 US-00: *As an unregistered user, When I am not connected to a wallet (no web3 injected) And I navigate to any Route other than Home Page "/", Then I should be redirected to the Home Page "/" [front-end|mvp]*
 
 ### 👔 Contract Owner
 
@@ -87,11 +90,12 @@ The following user stories will be used to derive a series of test cases written
 + 📝 US-02: *As a contract owner, I should be the owner of the contract "Audits" [smart-contract|mvp]*
 
 📁 `F-CO-01: Contract Owner: Access Rights & Privileges`
-+ 📝 US-00: *As a contract owner, I should be the only one able to set the contract owner to a new address [smart-contract|mvp]*
-+ 📝 US-01: *As a contract owner, I should be the only one able to authenticate a new auditor address [smart-contract|mvp]*
-+ 📝 US-02: *As a contract owner, I should be the only one able to revoke an existing auditor address [smart-contract|mvp]*
-+ 📝 US-03: *As a contract owner, I should be the only one able to grant an auditor privilege [smart-contract|mvp]*
-+ 📝 US-04: *As a contract owner, I should be the only one able to remove an auditor privilege [smart-contract|mvp]*
++ CONTEXT: *As a contract owner, I should be the only one able to ...*
+    + 📝 US-00: *... set the contract owner to a new address [smart-contract|mvp]*
+    + 📝 US-01: *... authenticate a new auditor address [smart-contract|mvp]*
+    + 📝 US-02: *... revoke an existing auditor address [smart-contract|mvp]*
+    + 📝 US-03: *... grant an auditor privilege [smart-contract|mvp]*
+    + 📝 US-04: *... remove an auditor privilege [smart-contract|mvp]*
 
 📁 `F-CO-02: Contract Owner: Fees`
 + 📝 US-00: *As a contract owner, I should be the only one able to modify the team registration fees [smart-contract|mvp]*
@@ -113,9 +117,14 @@ The following user stories will be used to derive a series of test cases written
 ### 👷 Audit Team
 
 📁 `F-AT-00: Audit Team: Login [mvp]`
-+ 📝 US-00: *As an auditor, when I am not already logged (no web3 provider) and I navigate to the Home Page (/), And I click on the "Connect Wallet" button, Then I should be recognized as an auditor*
-+ 📝 US-00: *As an auditor, when I am already logged And I navigate to the Home Page (/), Then I should see in the content all my privileges*
-+ 📝 US-01: *As an auditor, when I am already logged And I navigate to the Home Page (/), Then I should see in the content all the active audits*
++ 📝 US-00: *As an auditor, When I am not already logged in (no web3 provider) and I navigate to the Home Page (/), And I click on the "Connect Wallet" button, Then I should be redirected to the auditor DashBoard (/AuditorDashboard)*
++ 📝 US-04: *... And I am connected to MetaMask, And I recognised as a team but not as an investor, Then I should see the Landing Page [front-end|mvp]*
+
++ 📝 US-01=>04:*As an auditor, When I am already logged in And I navigate to the Home Page (/), ...
+    + 📝 US-01: ... Then I should see in the header my profile (only auditor)*
+    + 📝 US-02: ... Then I should see in the header my address*
+    + 📝 US-03: ... Then I should see in the header all my privileges*
+    + 📝 US-04: ... Then I should see in the content all the active audits*
 
 📁 F-AT-01: Audit Team: DashBoard - Audit View [mvp]
     + F-AT-01-US-01: As an **admin**, when I navigate to the admin DashBoard (/AdminDashBoard), I want to **have a view on all the registered teams** [front-end|mvp]
