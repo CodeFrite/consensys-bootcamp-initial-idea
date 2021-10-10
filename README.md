@@ -158,7 +158,7 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 + Release coins to the investors addresses [optional]
 + Return coins to the investors addresses [optional]
  
-### Project Team
+### 📏 Project Team
 - AS A Project Team, WHEN I navigate to my  dashboard "/" [mvp]
 - Project submission [mvp]
 - Audit review [mvp]
@@ -177,11 +177,10 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 ## Technologies
  
 - Solidity (Smart Contract)
-- Truffle (Smart Contract Testing)
-- Vue.js (Front-End)
-- Flask/NodeJS (API)
-- LavaMoat (Front-End js security) [optional]
-- FileCoin (Project source code version control on the BlockChain) [optional] ... otherwise simple has of the contract + storage online
+- Truffle (testing / unbox react)
+- React / Bootstrap (Front-End)
+- NodeJS (API)
+- FileCoin (Project source code version control on the BlockChain) [optional] ... otherwise simple hash of the contract + storage online
  
 ## Progress
  
