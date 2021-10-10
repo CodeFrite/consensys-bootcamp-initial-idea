@@ -86,9 +86,9 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 
 📁 `F-CO-00: Contract Owner: Migration`
 + CONTEXT: *As a contract owner, I should be the owner of ...*
-+ 📝 US-00: *... the contract "Teams" [smart-contract|mvp]*
-+ 📝 US-01: *... the contract "Projects" [smart-contract|mvp]*
-+ 📝 US-02: *... the contract "Audits" [smart-contract|mvp]*
+    + 📝 US-00: *... the contract "Teams" [smart-contract|mvp]*
+    + 📝 US-01: *... the contract "Projects" [smart-contract|mvp]*
+    + 📝 US-02: *... the contract "Audits" [smart-contract|mvp]*
 
 📁 `F-CO-01: Contract Owner: Access Rights & Privileges`
 + CONTEXT: *As a contract owner, I should be the only one able to ...*
@@ -117,6 +117,14 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 📁 `F-CO-04: Contract Owner: Login`
 + 📝 US-00: *As a contract owner, When I am not already logged (no web3 provider) And I click on "Connect Wallet", Then I should see in the header my profile set to "Contract Owner" [front-end|mvp]*
 
+📁 `F-CO-04: Contract Owner: Dashboard - Access Rights & Privileges`
+📁 `F-CO-04: Contract Owner: Dashboard - Auditor Privileges`
+📁 `F-CO-04: Contract Owner: Dashboard - Fees`
+📁 `F-CO-04: Contract Owner: Dashboard - Teams`
+📁 `F-CO-04: Contract Owner: Dashboard - Projects`
+📁 `F-CO-04: Contract Owner: Dashboard - Audits`
+
+
 ### 👷 Audit Team
 
 📁 `F-AT-00: Audit Team: Login [mvp]`
@@ -124,12 +132,16 @@ A user is considered as unregistered if his MetaMask address is not linked to an
     + 📝 US-00: *... Then I should be redirected to the auditor DashBoard (/AuditorDashboard) [front-end|mvp]*
     + 📝 US-01: *... Then I should not see in the content the buttons "Register a Team" and "Become an investor" [front-end|mvp]*
 
-📁 `F-AT-01: Audit Team: Dashboard [mvp]`
-+ CONTEXT: *As an auditor, When I am already logged in And I navigate to the Home Page (/), ...*
+📁 `F-AT-01: Audit Team: Dashboard - Header [mvp]`
++ CONTEXT: *As an auditor, When I am in my Dashboard (/AuditDashboard), ...*
     + 📝 US-01: *... Then I should see in the header my profile set as auditor*
     + 📝 US-02: *... Then I should see in the header my wallet address*
     + 📝 US-03: *... Then I should see in the header all my auditor privileges*
     + 📝 US-04: *... Then I should see in the content all the active audits*
+
+📁 `F-AT-01: Audit Team: Dashboard - Audits [mvp]`
+📁 `F-AT-01: Audit Team: Dashboard - ACO [mvp]`
+
 + F-AT-01-US-01: As an **admin**, when I navigate to the admin DashBoard (/AdminDashBoard), I want to **have a view on all the registered teams** [front-end|mvp]
 + F-AT-01-US-02: As an **admin**, when I click on a team, I want to **all their related projects and related audits** [front-end|mvp]
 + F-AT-01-US-03: As an **admin**, I want to **have a view on all teams** so that I can **browse their projects and related audits** [front-end|mvp]
