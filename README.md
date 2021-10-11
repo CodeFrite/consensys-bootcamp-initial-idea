@@ -64,7 +64,7 @@ On the contrary, if the project team respects its commitment:
 - The project tokens will be delivered to the investors
 - The auditor will keep the money from the investors
  
-## Features & User Stories = Test 
+## Features & User Stories
 
 The following user stories will be used to derive a series of test cases written in js and solidity. These tests cases will be used as part of the Test Driven Development approach: Every time I want to develop a new feature, I begin by writing the corresponding test case, then I code the solution and I stop as soon as the test case passes. Then, if an undesirable behaviour is observed, it means that either the test case and/or the user story itself is incorrect.
 
@@ -151,7 +151,7 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 + Release coins to the investors addresses [optional]
 + Return coins to the investors addresses [optional]
  
-### 🏗 Project Team
+### 🔧 Project Team
 - AS A Project Team, WHEN I navigate to my  dashboard "/" [mvp]
 - Project submission [mvp]
 - Audit review [mvp]
