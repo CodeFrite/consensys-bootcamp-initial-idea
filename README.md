@@ -151,7 +151,7 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 + Release coins to the investors addresses [optional]
 + Return coins to the investors addresses [optional]
  
-### 📏 Project Team
+### 🏗 Project Team
 - AS A Project Team, WHEN I navigate to my  dashboard "/" [mvp]
 - Project submission [mvp]
 - Audit review [mvp]
