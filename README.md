@@ -76,11 +76,11 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 + CONTEXT: *As an unregistered user, When I navigate to the Home Page (/), ...*
     + 📝 US-00: *... Then I should always see the header on top (10%) and the page content below (90%) [front-end|mvp]*
     + 📝 US-01: *... And I scroll the page content, Then the header should remain fixed, always on top and visible [front-end|mvp]*
-    + 📝 US-02: *... And I am not connected to a wallet (no web3 injected), Then I should see in the header the button "Connect Wallet" [front-end|mvp]*
-    + 📝 US-03: *... And I am connected to a wallet (no web3 injected), Then the I should see in the content the buttons "Register a Team" and "Become an investor" [front-end|mvp]*
+    + 📝 US-02: *... And I am not connected to a wallet (no web3 injected), Then I should see in the header the button 'Connect Wallet' [front-end|mvp]*
+    + 📝 US-03: *... And I am connected to a wallet (no web3 injected), Then I should see in the content the buttons 'Register a Team' and 'Become an investor' [front-end|mvp]*
 
 📁 `F-UU-01: Unregistered User: Navigation`
-+ 📝 US-00: *As an unregistered user, When I am not connected to a wallet (no web3 injected) And I navigate to any Route other than Home Page "/", Then I should be redirected to the Home Page "/" [front-end|mvp]*
++ 📝 US-00: *As an unregistered user, When I am not connected to a wallet (no web3 injected) And I navigate to any Route other than Home Page (/), Then I should be redirected to the Home Page (/) [front-end|mvp]*
 
 ### 👔 Contract Owner
 
@@ -92,18 +92,19 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 
 📁 `F-CO-01: Contract Owner: Access Rights & Privileges`
 + CONTEXT: *As a contract owner, I should be the only one able to ...*
-    + 📝 US-00: *... set the contract owner to a new address [smart-contract|mvp]*
+    + 📝 US-00: *... set the contract owner of the contracts 'Teams/Projects/Audits' to a new address [smart-contract|mvp]*
     + 📝 US-01: *... authenticate a new auditor address [smart-contract|mvp]*
     + 📝 US-02: *... revoke an existing auditor address [smart-contract|mvp]*
     + 📝 US-03: *... grant an auditor privilege [smart-contract|mvp]*
     + 📝 US-04: *... remove an auditor privilege [smart-contract|mvp]*
 
-📁 `F-CO-02: Contract Owner: Fees`
+📁 `F-CO-02: Contract Owner: Registration Fees`
 + CONTEXT: *As a contract owner, I should be the only one able to modify ...*
     + 📝 US-00: *... the team registration fees [smart-contract|mvp]*
-    + 📝 US-01: *... the user registration fees [smart-contract|mvp]*
+    + 📝 US-01: *... the project registration fees [smart-contract|mvp]*
     + 📝 US-02: *... the audit registration fees [smart-contract|mvp]*
     + 📝 US-03: *... the aco registration fees [smart-contract|optional]*
+    + 📝 US-04: *... the investor registration fees [smart-contract|mvp]*
 
 📁 `F-CO-03: Contract Owner: Auditors Privileges`
 + CONTEXT: *As a contract owner, I should be the only one able to modify ...*
@@ -116,14 +117,6 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 
 📁 `F-CO-04: Contract Owner: Login`
 + 📝 US-00: *As a contract owner, When I am not already logged (no web3 provider) And I click on "Connect Wallet", Then I should see in the header my profile set to "Contract Owner" [front-end|mvp]*
-
-📁 `F-CO-04: Contract Owner: Dashboard - Access Rights & Privileges`
-📁 `F-CO-04: Contract Owner: Dashboard - Auditor Privileges`
-📁 `F-CO-04: Contract Owner: Dashboard - Fees`
-📁 `F-CO-04: Contract Owner: Dashboard - Teams`
-📁 `F-CO-04: Contract Owner: Dashboard - Projects`
-📁 `F-CO-04: Contract Owner: Dashboard - Audits`
-
 
 ### 👷 Audit Team
 
