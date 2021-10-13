@@ -90,13 +90,13 @@ A user is considered as unregistered if his MetaMask address is not linked to an
     + 📝 US-01: *... the contract "Projects" [smart-contract|mvp]*
     + 📝 US-02: *... the contract "Audits" [smart-contract|mvp]*
 
-📁 `F-CO-01: Contract Owner: Access Rights & Privileges` [sequence diagram](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIHkHcB2kBOAuaBhAFgQ0QOYyYD2iwKuAxsHEqgFABGJwwJAtgA64qhUge5AM4MGPPiAFDgBFCQCuXaAGJwIAtlkpIAT2gAqA9ABi88gFoAoogAmDauxR1kKBpDvje-Qfm2LlNQ0tOUgPQwMAIXASKgBrHFwQRCMvSWk-aAAVSFwOUQkfGWgABXkAK0gaAu8pX3JoAEEFWzBRD1toMQRXCwsAPhy84QxhSGAe1AAKXFtbHWFhAEoHGhAAN1xgGCH8hl3hAYPoDBBhSZQZuYXl-dz8vv6LjB1gBRREYWgr+chFldsuTWm222XuogYF0eZRIlWqo3GFx+NxWjg2WxgMLhwFEWKqOIGeOqJ2gZyRs1+-wYRIJA2e0Fe70+3wpKIYgLRIMxFXxEKhA2arRxCIm9EurL+t05GKaLTaDEFbQFcuFpPOYuRkpWitpTzFL3GTK+mqpHOBMp1wiAA)
+📁 `F-CO-01: Contract Owner: Access Rights & Privileges` [[Link: sequence diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIHkHcB2kBOAuaBhAFgQ0QOYyYD2iwKuAxsHEqgFABGJwwJAtgA64qhUge5AM4MGPPiAFDgBFCQCuXaAGJwIAtlkpIAT2gAqA9ABi88gFoAoogAmDauxR1kKBpDvje-Qfm2LlNQ0tOUgPQwMAIXASKgBrHFwQRCMvSWk-aAAVSFwOUQkfGWgABXkAK0gaAu8pX3JoAEEFWzBRD1toMQRXCwsAPhy84QxhSGAe1AAKXFtbHWFhAEoHGhAAN1xgGCH8hl3hAYPoDBBhSZQZuYXl-dz8vv6LjB1gBRREYWgr+chFldsuTWm222XuogYF0eZRIlWqo3GFx+NxWjg2WxgMLhwFEWKqOIGeOqJ2gZyRs1+-wYRIJA2e0Fe70+3wpKIYgLRIMxFXxEKhA2arRxCIm9EurL+t05GKaLTaDEFbQFcuFpPOYuRkpWitpTzFL3GTK+mqpHOBMp1wiAA)
 + CONTEXT: *As a contract owner, I should be the only one able to ...*
     + 📝 US-00: *... set the contract owner of the contracts 'Teams/Projects/Audits' to a new address [smart-contract|mvp]*
     + 📝 US-01: *... authenticate a new auditor address [smart-contract|mvp]*
     + 📝 US-02: *... revoke an existing auditor address [smart-contract|mvp]*
 
-📁 `F-CO-02: Contract Owner: Registration Fees`
+📁 `F-CO-02: Contract Owner: Registration Fees` [[Link: sequence diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIHkHcB2kBO0Bc0DKljQGKSQDOAUKQA4CGKoAxiNYsAOYoD2ArhdAMTggWAC1YpIAT2gAqKQQ7MAtAFFEAE1JU6wdmgTIUpSGso16jKszZce-QSLZFE0qQCFw7OgGsAwkKohEGRNaEAYmPAAVSCoAWzJqELCLPAAFDgArSC1401DzZmgAQU5VMBzE-LwASUQANxJtFHKzcOgAEULYZrzWpWAhVEhOGMNjUj1UBQUAPijY4kxiXDmY7zEqUHZEQhIACk4A4ABKDS0QWo2YFbJrmevMEGIJlF2qVVUxYmIT2+npvoGYmGmEgMTA0F8FhYkBWa2im22RGIr3en2IABp2OBVOjkPAftE4lNps9MGJgJwUIhkVicXiTqpomcLsAroSyAAjdjAbQxBItZJkcZISYzNLsTLZRa4cWS4BwjYgLY7ZEHZgnTSgFkwWVZYBkXXZMUZPULaCPZ4oj4kb6kQ36mb-fqDYHQUHgyGIaH2hUIlVWtGY7G4yD4u0mo0zUnQcmU6m7WkhsOMzXnS7Qe1C57E4qlfXS4C5sC+pWIvZq46nLXpov60i14gzBsPJ4il5va1fE4Nx0Al0xEFgvCe6G1kvKpEBm1Bumh7slMrE6Oxqk04P00gp5k1hd14X6Yk1erERpmpbAI8NHTjsuqw4a7es6CXk86Mgv08zD9vluWjtok5vyaXtnSBAc3SHCE-C9SAgJvf1-2nRMNyAxsozbMlcDjNdZ2TJlqyfVDyGzGYOi6AsyPgycKwfAiYDIsgGNIzozQtNspy7UgmL+PswMHD1oOhSj1j9SdEK+GckxOJj0P0TCKVXBN1znTd8LTJ8GKAA)
 + CONTEXT: *As a contract owner, I should be the only one able to modify ...*
     + 📝 US-00: *... the team registration fees [smart-contract|mvp]*
     + 📝 US-01: *... the project registration fees [smart-contract|mvp]*
