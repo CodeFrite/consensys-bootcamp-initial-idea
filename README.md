@@ -152,6 +152,7 @@ A user is considered as unregistered if his MetaMask address is not linked to an
 + Return coins to the investors addresses [optional]
  
 ### 🔧 Project Team
+[Sequence Diagram](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIAUCcD2ArSBjY0AqkCGBbaALmgGF49gZds98AoegeiegEENF4BnegYmgAxJADtgAWgCiIgCb0ADrnig0IRWIDmSAK7zofcCA0ALYFsgBPaACprQ0ROkyb1+rk7xaBBCnTB6kLKMAgBC7gDWUkGKyiCq6mY6egZGpgBG4NowttAh4Iho4aTGuCAiLgpKKmq4YtAAsogiGogAIiEBQfy5+YXFpSKVsfG1iYi6+oYmiZCBLj0FRSVlFTHVCV74vGtxNXWSwMaQFNoMgXLd5JQwOATQK6RNwPDu-rf4PqgY4uIAfO-cEhoCi4KjvAAUaQsVG4AGYAEzQErcYwASmgigsuAykDcGBAADdQTc6LwAX8ASRMZAZNJxiZwVsNAA6ImZSCogA0924ACVIBoQNwqBQZIzuCzuOdjpzkWj6OTfr8DkcTvgSJB8GAyCCwXRwbgZDIKNxuNyoTCEUjcCjUQrST9-nRPn4SBRgNp4CJuODtGVMFQCABJGR2mR4fFEqibXjdADKuAJJLuZQAZoh7uVGs02h13i7vr9sy12iRuInIO9WpBgKVwD67cXcxTnUgvsA3TXPeVwcL4GUNNAKGguDIQ6igA)
 - AS A Project Team, WHEN I navigate to my  dashboard "/" [mvp]
 - Project submission [mvp]
 - Audit review [mvp]
