@@ -109,7 +109,7 @@ A user is considered as unregistered if his MetaMask addresses are not linked to
     + 📝 US-01: *... an auditor "mayAcceptCorrection" flag [smart-contract|mvp]*
     + 📝 US-02: *... an auditor "mayRateAudit" flag [smart-contract|mvp]*
     + 📝 US-03: *... an auditor "mayStartACO" flag [smart-contract|optional]*
-    + 📝 US-04: *... an auditor "maySendACOToken" flag [smart-contract|optional]*
+    + 📝 US-04: *... an auditor "mayReleaseACOTokens" flag [smart-contract|optional]*
     + 📝 US-05: *... an auditor "mayCloseACO" flag [smart-contract|optional]*
 
 📁 `F-CO-06: Contract Owner: Registration Fees` [[Link: Sequence Diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIHkHcB2kBO0Bc0DKljQGKSQDOAUKQA4CGKoAxiNYsAOYoD2ArhdAMTggWAC1YpIAT2gAqKQQ7MAtAFFEAE1JU6wdmgTIUpSGso16jKszZce-QSLZFE0qQCFw7OgGsAwkKohEGRNaEAYmPAAVSCoAWzJqELCLPAAFDgArSC1401DzZmgAQU5VMBzE-LwASUQANxJtFHKzcOgAEULYZrzWpWAhVEhOGMNjUj1UBQUAPijY4kxiXDmY7zEqUHZEQhIACk4A4ABKDS0QWo2YFbJrmevMEGIJlF2qVVUxYmIT2+npvoGYmGmEgMTA0F8FhYkBWa2im22RGIr3en2IABp2OBVOjkPAftE4lNps9MGJgJwUIhkVicXiTqpomcLsAroSyAAjdjAbQxBItZJkcZISYzNLsTLZRa4cWS4BwjYgLY7ZEHZgnTSgFkwWVZYBkXXZMUZPULaCPZ4oj4kb6kQ36mb-fqDYHQUHgyGIaH2hUIlVWtGY7G4yD4u0mo0zUnQcmU6m7WkhsOMzXnS7Qe1C57E4qlfXS4C5sC+pWIvZq46nLXpov60i14gzBsPJ4il5va1fE4Nx0Al0xEFgvCe6G1kvKpEBm1Bumh7slMrE6Oxqk04P00gp5k1hd14X6Yk1erERpmpbAI8NHTjsuqw4a7es6CXk86Mgv08zD9vluWjtok5vyaXtnSBAc3SHCE-C9SAgJvf1-2nRMNyAxsozbMlcDjNdZ2TJlqyfVDyGzGYOi6AsyPgycKwfAiYDIsgGNIzozQtNspy7UgmL+PswMHD1oOhSj1j9SdEK+GckxOJj0P0TCKVXBN1znTd8LTJ8GKAA)
