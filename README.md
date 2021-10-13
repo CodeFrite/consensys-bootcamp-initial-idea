@@ -90,13 +90,11 @@ A user is considered as unregistered if his MetaMask address is not linked to an
     + 📝 US-01: *... the contract "Projects" [smart-contract|mvp]*
     + 📝 US-02: *... the contract "Audits" [smart-contract|mvp]*
 
-📁 `F-CO-01: Contract Owner: Access Rights & Privileges`
+📁 `F-CO-01: Contract Owner: Access Rights & Privileges` [sequence diagram](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIHkHcB2kBOAuaBhAFgQ0QOYyYD2iwKuAxsHEqgFABGJwwJAtgA64qhUge5AM4MGPPiAFDgBFCQCuXaAGJwIAtlkpIAT2gAqA9ABi88gFoAoogAmDauxR1kKBpDvje-Qfm2LlNQ0tOUgPQwMAIXASKgBrHFwQRCMvSWk-aAAVSFwOUQkfGWgABXkAK0gaAu8pX3JoAEEFWzBRD1toMQRXCwsAPhy84QxhSGAe1AAKXFtbHWFhAEoHGhAAN1xgGCH8hl3hAYPoDBBhSZQZuYXl-dz8vv6LjB1gBRREYWgr+chFldsuTWm222XuogYF0eZRIlWqo3GFx+NxWjg2WxgMLhwFEWKqOIGeOqJ2gZyRs1+-wYRIJA2e0Fe70+3wpKIYgLRIMxFXxEKhA2arRxCIm9EurL+t05GKaLTaDEFbQFcuFpPOYuRkpWitpTzFL3GTK+mqpHOBMp1wiAA)
 + CONTEXT: *As a contract owner, I should be the only one able to ...*
     + 📝 US-00: *... set the contract owner of the contracts 'Teams/Projects/Audits' to a new address [smart-contract|mvp]*
     + 📝 US-01: *... authenticate a new auditor address [smart-contract|mvp]*
     + 📝 US-02: *... revoke an existing auditor address [smart-contract|mvp]*
-    + 📝 US-03: *... grant an auditor privilege [smart-contract|mvp]*
-    + 📝 US-04: *... remove an auditor privilege [smart-contract|mvp]*
 
 📁 `F-CO-02: Contract Owner: Registration Fees`
 + CONTEXT: *As a contract owner, I should be the only one able to modify ...*
