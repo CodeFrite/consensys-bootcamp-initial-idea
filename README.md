@@ -84,26 +84,26 @@ A user is considered as unregistered if his MetaMask addresses are not linked to
 
 ### 👔 Contract Owner
 
-📁 `F-CO-02: Contract Owner: Migration` [[Link: Sequence Diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIHkHcB2kBO0Bc0CyIDmKBDUAe0QCgyAjY4YYgWwAcCVQBjEZxYAZzOdYgOXYPmIBXRtADE4PAAtRKSAE9oAKnXQAKinEAzfVDIE2dNAmQoykRABN+LdpwLcxkmXNyL8kWxvUAIXBiNgBrAGF5AhBETUdBYVdgaABRYHlUSHF6G3sKS1QAWiKAPnTM5RzMO0hGEJVUADpa+uIVAAptSAJ6HgAaaAI7O2UeHgBKEzMQADciGAqsnLJClBLyjOX6GrqG5taGjoAFFGIAK0gzAaGRscnVpGKypaqd6EP2g732joBBcR2MA3YajSDjKZrDavbLvT6NFAtH6dACSiFm4PMILu4IeUJeWzeuzaCKRJI6ABE-rBsWCIWRaqZQPNgItCbCyBMgA)
+📁 `F-CO-02: Contract Owner: Contracts Migration` [[Link: Sequence Diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIDEFoDCB5eAGATALmog9gHbABOAhgMbDTIDuBkxOAsiAOZmiEBQXARnsGB4AtgAdSxUORDiiAZy7jJIabODs8AV1HQAxODYALdcUgBPaACpL0ACrFNAM0dQuFIcWp0GXSAQAmihJSMqREGtp6BqzG7JB+VpYAQuB45ADWiIakIATWQcqqYVQAosCGDJCawr4BPLT0xPDwAHxlFabVOP6QoqlmDAB0PX14ZgAUtpCkwnIANNCk-v6mcnIAlG6UIABupMAw7ZXVXA0MzW3lx8Ldvf1DI-3jAArEeABWkJTzi8urG6dvE1WkdOjdoI8xg87mNxgBBTT+MA-JYrSBrTZnYGXDpVcGQgbEYYwiYASQIO3RHhRf3RAKxF1BeNuo0JxNZ8IAIsgaWiMVweu5dvtDlcwVx1kA)
 + CONTEXT: *As a contract owner, When I migrate the contracts on the blockchain, Then I should be the owner of ...*
     + 📝 US-00: *... the contract "Teams" [smart-contract|mvp]*
     + 📝 US-01: *... the contract "Projects" [smart-contract|mvp]*
     + 📝 US-02: *... the contract "Audits" [smart-contract|mvp]*
     + 📝 US-03: *... the contract "ADOs" [smart-contract|optional]*
 
-📁 `F-CO-03: Contract Owner: Contracts Ownership` [[Link: Sequence Diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIHkHcB2kBOAuaBhAFgQ0QOYyYD2iwKuAxsHEqgFABGJwwJAtgA64qhUge5AM4MGPPiAFDgBFCQCuXaAGJwIAtlkpIAT2gAqA9ABi88gFoAoogAmDauxR1kKBpDvje-Qfm2LlNQ0tOUgPQwMAIXASKgBrHFwQRCMvSWk-aAAVSFwOUQkfGWgABXkAK0gaAu8pX3JoAEEFWzAa9PraRoARWFEPW2gxBFcLCwA+HLzhDGFIYBHUAApcW1sdYWEASgcaEAA3XGAYKfyGU+EJi+gMEGFFlBW1je3z3Pyx8YeMHWAFFEQwmgT3WkE2O1suT2h2O2XeogYD0+ZRIlWqs3mDxBLx2jgORxgKLRwFERKqJImZOqN2gdyxq1B4IYVIpE2+0F+-0BwIZOIYkLxMMJFXJCKRE2arRJGIW9EevLBr0FBKaLTaDElbQlaultPucuxip2mtZXzlP3mXKBhqZAuhKpNYrlnx6fRl9OeRt2oCFTV6oldl3Ggdu+tcNtegc+7M5AOtCttUJ9Dv9QA)
+📁 `F-CO-03: Contract Owner: Contracts Ownership` [[Link: Sequence Diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIDEFoDCB5eAGAzALmog9gHbABOAhgMbDTIDuBkxO+RZlAztXQ2wBYgAOAKABGeYMDwBbfqWKhyA0kTaDBMuSAUyiAc2J4Arv2gBicCB09geyAE9oAKgdx9ReAFECAE0EUJxTnpiQUhvNVl5RV19I1NzS2tiSFDHBwAhcDxyAGtEHlIQAidwjS0lKgAVSFJJFXVI7SoABX0AK0h2Eoby6ABBAy8wOojNKKpegBFkFVCvaFVaIPh4AD4qmrYcNkhgRYYAClIvLyS2NgBKX0oQADdSYBh12sEntlXX6BwQNj3iQ+PThcXtVassVr8cElgAZiAQOP8TpAzpcvNVrncHtBXgsuMQwS08O12Fsdr8EYDLn5bvcYASicAVHSOgzVkz2J9oN8yUdEcjBGyWasIdAoTC4dByUigaiqRjaW1mSpBL8wf1BgySbtcZK+bKaX0BkNBGqhqsTRrOT9tTyKcbDYLwbjITsxfCbVKUWjQHKDeqlSqzVNNtBtlqgjqgXrMZNpsag4Hpl8reH3XyY28hU6RS7YW6AR7BDL0fr00A)
 + CONTEXT: *As a contract owner, I should be the only one able to ...*
     + 📝 US-00: *... set the contract owner of the contract 'Teams' to a new address [smart-contract|mvp]*
     + 📝 US-01: *... set the contract owner of the contract 'Projects' to a new address [smart-contract|mvp]*
     + 📝 US-02: *... set the contract owner of the contract 'Audits' to a new address [smart-contract|mvp]*
     + 📝 US-03: *... set the contract owner of the contract 'ADOs' to a new address [smart-contract|optional]*
 
-📁 `F-CO-04: Contract Owner: Authenticate & Revoke Auditors`
+📁 `F-CO-04: Contract Owner: Authenticate & Revoke Auditors` [[Link: Sequence Diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIDEFoDCB5eAGALALmog9gHbABOAhgMbDTIDuBkxOAggK7AAWkRI5pwMAMmgAlSADc8AaxisAJmDzEAzgCgARnmDA8AWwAOpYqHIgDRVQaM9TpIgHNieFnugBicCDvtgDyAE9oACpAuEciFQptYmo6BhUuWRVLYxt7R2c3Dy8fYkguIMCAIXA8cklEdlIQAmCkwxSzKjkwC3rrRugAUQ4GSBYdeIJElQB6EehWDkUQAC8YehpoUhZ5KKXZWVylVVp6Ynh4AD5m4CUcZaniWcgTxQAKUg2tpQBKCMoQMT4ZFZaVE6URwBOBASl2DDuOiUdgAdI9NpBtm8AUDfqcQUpbsQHk9Ea9-mjAYdDt1OLl+jhIDowBM2OxpnMsTiEdsADTw57IwkHQ7gxjQXLAFjEAhKZnPdm4tkaPDgN6ySCRT7fWmrVSjcaiCTSJZoxTrFk7WL7VFqnC5bU3PXYjl4t5Kr78VV-FHHQkYvmQ6FwqX413A6Cgpm2pEEtVHEk9ck6SnUqhaqRW1b3ENKSWGrnho5882QIUisWp9OclQKh0qgFAA)
 + CONTEXT: *As a contract owner, I should be the only one able to ...*
     + 📝 US-01: *... authenticate a new auditor address [smart-contract|mvp]*
     + 📝 US-02: *... revoke an existing auditor address [smart-contract|mvp]*
 
-📁 `F-CO-05: Contract Owner: Auditors Privileges`
+📁 `F-CO-05: Contract Owner: Auditors Privileges` [[Link: Sequence Diagram]](https://sequencediagram.org/index.html#initialData=C4S2BsFMAIDEFoDCB5eAGArALmog9gHbABOAhgMbDTIDuBkxOAggK4AmYexAztAArEQANxBQA5pG4AoKQCM8wYHgC2AB1LFQ5EOqLT1mkNt3AxxPC1XQAxOBBiAFqeKQAntABUHuOaJSKSsTUdAxSkARsUgZaOqREZhZWtvZOZpDhnh4AQuB45ADWiA6kIAReURoxJtCsHMD6lUaxRNAAosAODJAsymERMgD0A9DKpK4A6oLAkMiy3AxCpKCEUrT0xPDwAHy1YNw4oxNTM3MLSyCEABSkbGwu3NwANPJ44ACU-pTCSzC79VJ-bjbQE4EDcNYMS7KbhiAB0Nzukm4H0BwPYe1B3D+XChMPht3uyKkj2gYOxxGuBKRKPR9W2W3anRcPRwkGUYFwxQIEgAsmNJmATvNiItlgRKYiHo8EYTHq82I96DQaXUgdsIYxoC5gCxiARuBLZfLFZBlVI2JAAt9pjVadIpEMRmMmORyJBVMB8MQXF8VhrNjs7Qdna73Z6uD6xYakc88K8PlbRb87QC7WjVZiNbi4TLqanVemMaSsbScdCc1SHiq9vTGV0WdA2RyinFeSG3R6vZGLuLc1K+09jUrq3T1SFNdrdfro1Kh6aPhbEz9barBsNDgAlH5-VbjgMgp2uLfTP4zp4vd6fUBJld7fM1wMZ4tZ8v4yVE1GPotk0sU18DkcgS2BkOnrZRWXZKgW25SA+SPbdaTPaVK0HcAFWHe9Ry2DUcEnPUDQHOU0JNM1Fy+G9ATXQ8AGVgEqJgUF3dZ9yDGi6M0BjkCQi8E3I5dKM-A8wRfPEAMwoChJLOoy1ElDANrUDmXAxtIM5VtYLGWj6JQJDCLnM1UTHdZcMgHV8KQ-SF0tPibUoh11zGDdICgUh5k4gAVPB8nCaR-ULepgyPZzLTclBPO86dCJ4q9rWTVdBNY4Tx2zN9CXkr8AuLckUrEz8QKZbplKbKCuTbIKXNC5Bwp83SUKI9D53EgMcK1UypwIurLPNazr34u0gA)
 + CONTEXT: *As a contract owner, I should be the only one able to modify ...*
     + 📝 US-00: *... an auditor "mayWriteObservation" flag [smart-contract|mvp]*
     + 📝 US-01: *... an auditor "mayAcceptCorrection" flag [smart-contract|mvp]*
